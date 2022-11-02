@@ -5,20 +5,26 @@ def cipher(text, shift, encrypt=True):
     Parameters
     ----------
     text: The string the user wishes to encrypt or decrypt.
-    shift: The degree wo which the text is encrpyted. For example,shift = 2 encrypts the text two letters forward.
-    encypt: Boolean for whether to encrypt or decrypt. When encrypt=True, the text will be encrypted, when encrypt=False the text will be decrypted.
+    shift: An integer that indicates the degree to which the text is encrpyted. For example,shift = 2 encrypts the text two letters forward.
+    encypt: A Boolean for whether to encrypt or decrypt. When encrypt=True, the text will be encrypted, when encrypt=False the text will be decrypted.
+
+    Returns
+    -------
+    The encrypted/decrypted text.
     
-    example (encrypt):
-        from cipher_wn2195 import cipher
-        encrypt_text = qmss
-        cipher(encrypt_tex, 3, encrypt=True)
-        function returns -> tpvv
+    Examples
+    -------
+    Example (encrypt):
+    >>> from cipher_wn2195 import cipher
+    >>> encrypt_text = qmss
+    >>> cipher(encrypt_tex, 3, encrypt=True)
+    "tpvv"
             
-    example (decrypt):
-        from cipher_wn2195 import cipher
-        decrypt_text = tpvv
-        cipher(decrypt_text, 3, encrypt=False)
-        function returns -> qmss
+    Example (decrypt):
+    >>> from cipher_wn2195 import cipher
+    >>> decrypt_text = tpvv
+    >>> cipher(decrypt_text, 3, encrypt=False)
+    "qmss"
     """
     alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
     new_text = ''
